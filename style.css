@@ -1,0 +1,136 @@
+@import url("https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css");
+
+*{
+    padding: 0px;
+}
+
+body{
+    color: white;
+    background-color: black;
+}
+
+nav{
+    border: solid white;
+    border-width: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.main-content{
+    display: flex;
+    /* justify-content: space-around; */
+}
+
+aside{
+    border: solid red;
+    border-radius: 10px;
+    border-width: 2px;
+    height: 700px;
+    width: 25vw;
+    justify-content: left;
+}
+
+main{
+    border: solid skyblue;
+    border-width: 2px;
+    height: 700px;
+    width: 75vw;
+    justify-content: right;
+}
+
+footer{
+    border: solid yellow;
+    border-width: 2px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: ; */
+}
+
+.text-normal{
+    font-family: 'GothamPro';
+    font-style: normal;
+    font-weight: 100;
+}
+
+.text-bold{
+    font-family: 'GothamPro';
+    font-style: normal;
+    font-weight: 400;
+}
+
+.text-ultrabold{
+    font-family: 'GothamPro';
+    font-style: normal;
+    font-weight: 900;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #575757;
+    /* margin: 1em 0; */
+    padding: 0;
+    width: 95%;
+}
+
+#signup-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.signup-bar{
+    background-image: linear-gradient(to right, #AF2795, #509BF4);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+#log-in{
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 30px;
+    height: 50px;
+    width: 100px;
+}
+
+#sign-up{
+    color: lightgray;
+    height: 50px;
+    width: 100px;
+    border: none;
+    display: grid;
+    align-items: center;
+}
+
+.nav-signup{
+    display: flex;
+}
+
+#lib-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: rgb(159, 159, 159);
+}
+
+#library-svg{
+    height: 35px;
+    width: 35px;
+}
+
+#library{
+    display: flex;
+}
+
+#plus-svg{
+    height: 35px;
+    width: 35px;
+}
