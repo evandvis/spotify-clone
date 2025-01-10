@@ -12,14 +12,14 @@
 <body>
     <nav>
         <span class="logo">
-            <img src="assets/svgs/logo.svg" alt="spotify logo">
+            <img id="logo-svg" src="assets/svgs/logo.svg" alt="spotify logo">
         </span>
         <span class="search-bar">
             <span class="home-icon"></span>
         </span>
         <div class="text-bold nav-signup">
             <div id="sign-up">Sign up</div>
-            <button id="log-in" class="text-bold" style="font-size: medium;">Log in</button>
+            <button id="log-in" class="text-bold btn" style="font-size: medium;">Log in</button>
         </div>
     </nav>
 
@@ -34,39 +34,57 @@
                     <img  id="plus-svg" src="assets/svgs/plus-svgrepo-com.svg" alt="plus svg">
                 </div>
             </div>
+            <div class="lib-tile"></div>
+            <div class="lib-tile"></div>
         </aside>
     
         <main>
+            <div class="fade-bg"></div>
             <div class="songs">
-                <div class="text-bold">
-                    <p style="font-size: x-large;">Popular artists</p>
+                <div id="pop-artists" class="tile-set">
+                    <div class="text-bold">
+                        <p style="font-size: x-large;">Popular artists</p>
+                    </div>
+                    <div class="text-normal tiles">
+                        *insert tiles here*
+                    </div>
+
                 </div>
-                <div class="text-normal tiles">
-                    *insert tiles here*
+                <div id="pop-albums" class="tile-set">
+                    <div class="text-bold">
+                        <p style="font-size: x-large;">Popular albums and singles</p>
+                    </div>
+                    <div class="text-normal tiles">
+                        *insert tiles here*
+                    </div>
+
                 </div>
-                <div class="text-bold">
-                    <p style="font-size: x-large;">Popular albums and singles</p>
+                <div id="pop-radio" class="tile-set">
+                    <div class="text-bold">
+                        <p style="font-size: x-large;">Popular radio</p>
+                    </div>
+                    <div class="text-normal tiles">
+                        *insert tiles here*
+                    </div>
+
                 </div>
-                <div class="text-normal tiles">
-                    *insert tiles here*
+                <div id="featured-charts" class="tile-set">
+                    <div class="text-bold">
+                        <p style="font-size: x-large;">Featured Charts</p>
+                    </div>
+                    <div class="text-normal tiles">
+                        *insert tiles here*
+                    </div>
+
                 </div>
-                <div class="text-bold">
-                    <p style="font-size: x-large;">Popular radio</p>
-                </div>
-                <div class="text-normal tiles">
-                    *insert tiles here*
-                </div>
-                <div class="text-bold">
-                    <p style="font-size: x-large;">Featured Charts</p>
-                </div>
-                <div class="text-normal tiles">
-                    *insert tiles here*
-                </div>
-                <div class="text-bold">
-                    <p style="font-size: x-large;">India's Best</p>
-                </div>
-                <div class="text-normal tiles">
-                    *insert tiles here*
+                <div id="india-best" class="tile-set">
+                    <div class="text-bold">
+                        <p style="font-size: x-large;">India's Best</p>
+                    </div>
+                    <div class="text-normal tiles">
+                        *insert tiles here*
+                    </div>
+
                 </div>
             </div>
             
@@ -75,7 +93,7 @@
 
                 </div>
                 <hr/>
-                <div class="copyright">© 2025 Spotify AB</div>
+                <div class="copyright" style="margin-top: 50px; margin-bottom: 100px; ">© 2025 Spotify AB</div>
             </footer>
         </main>
     </div>
@@ -85,7 +103,7 @@
             <div class="text-bold" style="font-size: small;">Preview of Spotify</div>
             <div class="text-normal">Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</div> 
         </div>
-        <button class="btn text-bold">Sign up free</button>
+        <button id="signup-free" class="btn text-bold">Sign up free</button>
     </div>
 
     

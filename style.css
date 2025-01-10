@@ -1,12 +1,17 @@
 @import url("https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css");
 
 *{
+    margin: 0;
     padding: 0px;
 }
 
 body{
     color: white;
     background-color: black;
+}
+
+#logo-svg{
+    margin-left: 20px;
 }
 
 nav{
@@ -21,15 +26,18 @@ nav{
 
 .main-content{
     display: flex;
-    /* justify-content: space-around; */
+    justify-content: space-around;
+    margin-top: 10px;
+    background-color: #121212;
 }
 
 aside{
+    background-color: #121212;
     border: solid red;
     border-radius: 10px;
     border-width: 2px;
     height: 700px;
-    width: 25vw;
+    width: 24vw;
     justify-content: left;
 }
 
@@ -37,14 +45,27 @@ main{
     border: solid skyblue;
     border-width: 2px;
     height: 700px;
-    width: 75vw;
+    width: 74vw;
     justify-content: right;
+    border-radius: 10px;
+}
+
+.songs{
+    margin: 20px;
+    /* position: relative;
+    z-index: 3; */
+}
+
+.fade-bg{
+    background-image: linear-gradient(to bottom, #232323, #121212);
+    height: 300px;
+    position: absolute;
+    z-index: -1;
 }
 
 footer{
     border: solid yellow;
     border-width: 2px;
-    height: 300px;
     display: flex;
     flex-direction: column;
     /* align-items: ; */
@@ -90,13 +111,22 @@ hr {
     flex-direction: row;
     justify-content: space-between;
     padding: 10px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+button{
+    border: none;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.btn{
+    background-color: white;
+    color: black;
 }
 
 #log-in{
-    background-color: white;
-    color: black;
-    border: none;
-    border-radius: 30px;
     height: 50px;
     width: 100px;
 }
@@ -115,22 +145,47 @@ hr {
 }
 
 #lib-bar{
+    /* border: solid green; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     color: rgb(159, 159, 159);
+    padding: 15px;
 }
 
 #library-svg{
-    height: 35px;
-    width: 35px;
+    height: 25px;
+    width: 25px;
 }
 
 #library{
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
 }
 
 #plus-svg{
-    height: 35px;
-    width: 35px;
+    height: 25px;
+    width: 25px;
+}
+
+#signup-free{
+    height: 50px;
+    width: 150px;
+    margin-right: 10px;
+    font-size: medium;
+}
+
+.tile-set{
+    margin-bottom: 20px;
+}
+
+.lib-tile{
+    height: 130px;
+    background-color: #232323;
+    position: relative;
+    margin: 10px;
+    margin-top: 25px;
+    border-radius: 10px;
 }
