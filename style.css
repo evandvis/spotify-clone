@@ -8,6 +8,7 @@
 body{
     color: white;
     background-color: black;
+    /* position: fixed; */
 }
 
 #logo-svg{
@@ -26,9 +27,40 @@ nav{
 
 .main-content{
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     margin-top: 10px;
+    background-color: black;
+    /* position: relative;
+    z-index: -3; */
+}
+
+main{
+    border: solid skyblue;
+    border-width: 2px;
+    height: 700px;
+    width: 74vw;
+    justify-content: right;
+    border-radius: 10px;
     background-color: #121212;
+    position: relative;
+    z-index: 0;
+}
+
+.fade-bg{
+    background-image: linear-gradient(to bottom, #232323, #121212);
+    height: 300px;
+    border: none;
+    border-radius: 10px;
+    position: relative;
+    z-index: 3;
+}
+
+.songs{
+    margin: 20px;
+    position: absolute;
+    z-index: 7;
+    top: 0px;
 }
 
 aside{
@@ -41,27 +73,7 @@ aside{
     justify-content: left;
 }
 
-main{
-    border: solid skyblue;
-    border-width: 2px;
-    height: 700px;
-    width: 74vw;
-    justify-content: right;
-    border-radius: 10px;
-}
 
-.songs{
-    margin: 20px;
-    /* position: relative;
-    z-index: 3; */
-}
-
-.fade-bg{
-    background-image: linear-gradient(to bottom, #232323, #121212);
-    height: 300px;
-    position: absolute;
-    z-index: -1;
-}
 
 footer{
     border: solid yellow;
@@ -188,4 +200,54 @@ button{
     margin: 10px;
     margin-top: 25px;
     border-radius: 10px;
+}
+
+.invert{
+    filter: invert(1);
+}
+
+#home-svg{
+    height: 25px;
+    width: 25px;
+}
+
+#home-search{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 30vw;
+    /* margin: auto; */
+    /* gap: 2px; */
+}
+
+#home-container{
+    background-color: #232323;
+    border: none;
+    border-radius: 30px;
+    height: 45px;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search-bar{
+    background-color: #232323;
+    color: rgb(159, 159, 159);
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 45px;
+    height: 45px;
+    width: 25vw;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 10px;
+}
+
+#searchlens{
+    height: 25px;
+    width: 25px;
 }

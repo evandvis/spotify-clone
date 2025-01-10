@@ -6,7 +6,6 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="style.css">
-    <!-- <link rel="https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css"> -->
 
 </head>
 <body>
@@ -14,8 +13,11 @@
         <span class="logo">
             <img id="logo-svg" src="assets/svgs/logo.svg" alt="spotify logo">
         </span>
-        <span class="search-bar">
-            <span class="home-icon"></span>
+        <span id="home-search">
+            <span id="home-container">
+                <img id="home-svg" class="invert" src="assets/svgs/home-svgrepo-com.svg" alt="home-svg">
+            </span>
+            <form id="search-bar" action="get" class="text-normal"><img id="searchlens" src="assets/svgs/searchlens.svg" alt="">What do you want to play?</form>
         </span>
         <div class="text-bold nav-signup">
             <div id="sign-up">Sign up</div>
@@ -101,7 +103,7 @@
     <div class="signup-bar">
         <div id="signup-info">
             <div class="text-bold" style="font-size: small;">Preview of Spotify</div>
-            <div class="text-normal">Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</div> 
+            <div class="text-normal" style="margin-top: 5px;">Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</div> 
         </div>
         <button id="signup-free" class="btn text-bold">Sign up free</button>
     </div>
