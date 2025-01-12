@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,17 +9,20 @@
     <link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
     <nav>
-        <span class="logo">
+        <div class="logo">
             <img id="logo-svg" src="assets/svgs/logo.svg" alt="spotify logo">
-        </span>
-        <span id="home-search">
+        </div>
+        <div id="home-search">
             <span id="home-container">
                 <img id="home-svg" class="invert" src="assets/svgs/home-svgrepo-com.svg" alt="home-svg">
             </span>
-            <form id="search-bar" action="get" class="text-normal"><img id="searchlens" src="assets/svgs/searchlens.svg" alt="">What do you want to play?</form>
-        </span>
+            <form action="get">
+                <input id="search-bar" class="text-normal" type="text" placeholder="What do you want to play?">
+            </form>
+        </div>
         <div class="text-bold nav-signup">
             <div id="sign-up">Sign up</div>
             <button id="log-in" class="text-bold btn" style="font-size: medium;">Log in</button>
@@ -33,13 +37,28 @@
                     <p>Your Library</p>
                 </div>
                 <div>
-                    <img  id="plus-svg" src="assets/svgs/plus-svgrepo-com.svg" alt="plus svg">
+                    <img id="plus-svg" src="assets/svgs/plus-svgrepo-com.svg" alt="plus svg">
                 </div>
             </div>
-            <div class="lib-tile"></div>
-            <div class="lib-tile"></div>
+            <div class="lib-tile">
+                <div class="text-bold">
+                    <p> Create your first playlist</p>
+                    <p class="text-normal" style="font-size: small; margin-top: 15px;">It's easy, we'll help you</p>
+                </div>
+                <button class="btn text-bold" style="width: fit-content;">Create Playlist</button>
+            </div>
+            <div class="lib-tile">
+                <div class="text-bold">
+                    <p> Create your first playlist</p>
+                    <p class="text-normal" style="font-size: small; margin-top: 15px;">It's easy, we'll help you</p>
+                </div>
+                <button class="btn text-bold" style="width: fit-content;">Create Playlist</button>
+            </div>
+            <div class="langs">
+                <button><img id="world-svg" src="assets/svgs/worldwide-internet-svgrepo-com.svg" alt="world">English</button>
+            </div>
         </aside>
-    
+
         <main>
             <div class="fade-bg"></div>
             <div class="songs">
@@ -47,69 +66,251 @@
                     <div class="text-bold">
                         <p style="font-size: x-large;">Popular artists</p>
                     </div>
-                    <div class="text-normal tiles">
-                        *insert tiles here*
-                    </div>
+                    <div class="tiles">
+                        <div class="main-tile-content">
+                            <div class="text-normal main-tile">
+                            </div>
+                            <p class="text-bold">*artist name*</p>
+                            <p>artist</p>
+                        </div>
+                        <div class="main-tile-content">
+                            <div class="text-normal main-tile">
+                            </div>
+                            <p class="text-bold">*artist name*</p>
+                            <p>artist</p>
+                        </div>
+                        <div class="main-tile-content">
+                            <div class="text-normal main-tile">
 
+                            </div>
+                            <p class="text-bold">*artist name*</p>
+                            <p>artist</p>
+                        </div>
+                        <div class="main-tile-content">
+                            <div class="text-normal main-tile">
+                            </div>
+                            <p class="text-bold">*artist name*</p>
+                            <p>artist</p>
+                        </div>
+                        <div class="main-tile-content">
+                            <div class="text-normal main-tile">
+
+                            </div>
+                            <p class="text-bold">*artist name*</p>
+                            <p>artist</p>
+                        </div>
+                        <div class="main-tile-content">
+                            <div class="text-normal main-tile">
+                            </div>
+                            <p class="text-bold">*artist name*</p>
+                            <p>artist</p>
+                        </div>
+                    </div>
                 </div>
                 <div id="pop-albums" class="tile-set">
                     <div class="text-bold">
-                        <p style="font-size: x-large;">Popular albums and singles</p>
+                        <p style="font-size: x-large;">Popular albums</p>
                     </div>
-                    <div class="text-normal tiles">
-                        *insert tiles here*
-                    </div>
+                    <div class="tiles">
+                        <div class="main-tile-content">
+                            <div class="text-normal main-tile">
+                            </div>
+                            <p class="text-bold">*artist name*</p>
+                            <p>artist</p>
+                        </div>
+                        <div class="main-tile-content">
+                            <div class="text-normal main-tile">
+                            </div>
+                            <p class="text-bold">*artist name*</p>
+                            <p>artist</p>
+                        </div>
+                        <div class="main-tile-content">
+                            <div class="text-normal main-tile">
 
+                            </div>
+                            <p class="text-bold">*artist name*</p>
+                            <p>artist</p>
+                        </div>
+                        <div class="main-tile-content">
+                            <div class="text-normal main-tile">
+                            </div>
+                            <p class="text-bold">*artist name*</p>
+                            <p>artist</p>
+                        </div>
+                        <div class="main-tile-content">
+                            <div class="text-normal main-tile">
+
+                            </div>
+                            <p class="text-bold">*artist name*</p>
+                            <p>artist</p>
+                        </div>
+                        <div class="main-tile-content">
+                            <div class="text-normal main-tile">
+                            </div>
+                            <p class="text-bold">*artist name*</p>
+                            <p>artist</p>
+                        </div>
+                    </div>
                 </div>
                 <div id="pop-radio" class="tile-set">
                     <div class="text-bold">
                         <p style="font-size: x-large;">Popular radio</p>
                     </div>
-                    <div class="text-normal tiles">
-                        *insert tiles here*
-                    </div>
+                    <div class="tiles">
+                        <div class="main-tile-content">
+                            <div class="text-normal main-tile">
+                            </div>
+                            <p class="text-bold">*artist name*</p>
+                            <p>artist</p>
+                        </div>
+                        <div class="main-tile-content">
+                            <div class="text-normal main-tile">
+                            </div>
+                            <p class="text-bold">*artist name*</p>
+                            <p>artist</p>
+                        </div>
+                        <div class="main-tile-content">
+                            <div class="text-normal main-tile">
 
+                            </div>
+                            <p class="text-bold">*artist name*</p>
+                            <p>artist</p>
+                        </div>
+                        <div class="main-tile-content">
+                            <div class="text-normal main-tile">
+                            </div>
+                            <p class="text-bold">*artist name*</p>
+                            <p>artist</p>
+                        </div>
+                        <div class="main-tile-content">
+                            <div class="text-normal main-tile">
+
+                            </div>
+                            <p class="text-bold">*artist name*</p>
+                            <p>artist</p>
+                        </div>
+                        <div class="main-tile-content">
+                            <div class="text-normal main-tile">
+                            </div>
+                            <p class="text-bold">*artist name*</p>
+                            <p>artist</p>
+                        </div>
+                    </div>
                 </div>
                 <div id="featured-charts" class="tile-set">
                     <div class="text-bold">
-                        <p style="font-size: x-large;">Featured Charts</p>
+                        <p style="font-size: x-large;">Featured charts</p>
                     </div>
-                    <div class="text-normal tiles">
-                        *insert tiles here*
-                    </div>
+                    <div class="tiles">
+                        <div class="main-tile-content">
+                            <div class="text-normal main-tile">
+                            </div>
+                            <p class="text-bold">*artist name*</p>
+                            <p>artist</p>
+                        </div>
+                        <div class="main-tile-content">
+                            <div class="text-normal main-tile">
+                            </div>
+                            <p class="text-bold">*artist name*</p>
+                            <p>artist</p>
+                        </div>
+                        <div class="main-tile-content">
+                            <div class="text-normal main-tile">
 
+                            </div>
+                            <p class="text-bold">*artist name*</p>
+                            <p>artist</p>
+                        </div>
+                        <div class="main-tile-content">
+                            <div class="text-normal main-tile">
+                            </div>
+                            <p class="text-bold">*artist name*</p>
+                            <p>artist</p>
+                        </div>
+                        <div class="main-tile-content">
+                            <div class="text-normal main-tile">
+
+                            </div>
+                            <p class="text-bold">*artist name*</p>
+                            <p>artist</p>
+                        </div>
+                        <div class="main-tile-content">
+                            <div class="text-normal main-tile">
+                            </div>
+                            <p class="text-bold">*artist name*</p>
+                            <p>artist</p>
+                        </div>
+                    </div>
                 </div>
                 <div id="india-best" class="tile-set">
                     <div class="text-bold">
                         <p style="font-size: x-large;">India's Best</p>
                     </div>
-                    <div class="text-normal tiles">
-                        *insert tiles here*
+                    <div class="tiles">
+                        <div class="main-tile-content">
+                            <div class="text-normal main-tile">
+                            </div>
+                            <p class="text-bold">*artist name*</p>
+                            <p>artist</p>
+                        </div>
+                        <div class="main-tile-content">
+                            <div class="text-normal main-tile">
+                            </div>
+                            <p class="text-bold">*artist name*</p>
+                            <p>artist</p>
+                        </div>
+                        <div class="main-tile-content">
+                            <div class="text-normal main-tile">
+
+                            </div>
+                            <p class="text-bold">*artist name*</p>
+                            <p>artist</p>
+                        </div>
+                        <div class="main-tile-content">
+                            <div class="text-normal main-tile">
+                            </div>
+                            <p class="text-bold">*artist name*</p>
+                            <p>artist</p>
+                        </div>
+                        <div class="main-tile-content">
+                            <div class="text-normal main-tile">
+
+                            </div>
+                            <p class="text-bold">*artist name*</p>
+                            <p>artist</p>
+                        </div>
+                        <div class="main-tile-content">
+                            <div class="text-normal main-tile">
+                            </div>
+                            <p class="text-bold">*artist name*</p>
+                            <p>artist</p>
+                        </div>
                     </div>
-
                 </div>
+                <footer>
+                    <div class="link-list">useful links
+    
+                    </div>
+                    <hr />
+                    <div class="copyright" style="margin-top: 50px; margin-bottom: 100px; font-size: small;">© 2025 Spotify
+                        AB</div>
+                </footer>
             </div>
-            
-            <footer>
-                <div class="link-list">useful links
-
-                </div>
-                <hr/>
-                <div class="copyright" style="margin-top: 50px; margin-bottom: 100px; ">© 2025 Spotify AB</div>
-            </footer>
         </main>
     </div>
 
     <div class="signup-bar">
         <div id="signup-info">
             <div class="text-bold" style="font-size: small;">Preview of Spotify</div>
-            <div class="text-normal" style="margin-top: 5px;">Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</div> 
+            <div class="text-normal" style="margin-top: 5px;">Sign up to get unlimited songs and podcasts with
+                occasional ads. No credit card needed.</div>
         </div>
         <button id="signup-free" class="btn text-bold">Sign up free</button>
     </div>
 
-    
+
 
     <script src="script.js"></script>
 </body>
+
 </html>

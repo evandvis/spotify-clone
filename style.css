@@ -8,7 +8,13 @@
 body{
     color: white;
     background-color: black;
-    /* position: fixed; */
+    position: fixed;
+}
+
+.logo{
+    width: 33vw;
+    /* border: solid red; */
+
 }
 
 #logo-svg{
@@ -16,35 +22,35 @@ body{
 }
 
 nav{
-    border: solid white;
+    /* border: solid white; */
     border-width: 2px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     height: 60px;
+    padding: 5px;
 }
 
 .main-content{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-top: 10px;
     background-color: black;
-    /* position: relative;
-    z-index: -3; */
+    position: relative;
 }
 
 main{
-    border: solid skyblue;
+    /* border: solid skyblue; */
     border-width: 2px;
     height: 700px;
-    width: 74vw;
+    width: 77vw;
     justify-content: right;
     border-radius: 10px;
     background-color: #121212;
     position: relative;
     z-index: 0;
+    overflow: scroll
 }
 
 .fade-bg{
@@ -65,11 +71,11 @@ main{
 
 aside{
     background-color: #121212;
-    border: solid red;
+    /* border: solid red; */
     border-radius: 10px;
     border-width: 2px;
     height: 700px;
-    width: 24vw;
+    width: 22vw;
     justify-content: left;
 }
 
@@ -81,6 +87,8 @@ footer{
     display: flex;
     flex-direction: column;
     /* align-items: ; */
+    position: relative;
+    z-index: 7;
 }
 
 .text-normal{
@@ -124,13 +132,16 @@ hr {
     justify-content: space-between;
     padding: 10px;
     height: 50px;
-    margin-top: 10px;
+    margin-top: 7px;
+    /* border: solid red; */
 }
 
 button{
     border: none;
     border-radius: 30px;
     padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .btn{
@@ -140,7 +151,7 @@ button{
 
 #log-in{
     height: 50px;
-    width: 100px;
+    width: 110px;
 }
 
 #sign-up{
@@ -154,6 +165,10 @@ button{
 
 .nav-signup{
     display: flex;
+    flex-direction: row;
+    justify-content: end;
+    width: 33vw;
+    /* border: solid red; */
 }
 
 #lib-bar{
@@ -194,12 +209,39 @@ button{
 }
 
 .lib-tile{
-    height: 130px;
+    height: 120px;
     background-color: #232323;
     position: relative;
     margin: 10px;
     margin-top: 25px;
     border-radius: 10px;
+    padding: 5px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    justify-content: space-around;
+}
+
+#world-svg{
+    height: 20px;
+    width: 20px;
+}
+
+.langs button{
+    background-color: #121212;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    align-items: center;
+    border: solid #575757;
+    position: absolute;
+    bottom: 30px;
+    left: 25px;
 }
 
 .invert{
@@ -215,10 +257,12 @@ button{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-    width: 30vw;
+    justify-content: center;
+    /* gap: 10px; */
+    width: 33vw;
+    /* border: solid red; */
     /* margin: auto; */
-    /* gap: 2px; */
+    gap: 7px;
 }
 
 #home-container{
@@ -234,20 +278,49 @@ button{
 
 #search-bar{
     background-color: #232323;
-    color: rgb(159, 159, 159);
     padding-left: 10px;
     padding-right: 10px;
     border-radius: 45px;
     height: 45px;
-    width: 25vw;
+    width: 27vw;
     display: flex;
     flex-direction: row;
     /* justify-content: center; */
     align-items: center;
     gap: 10px;
+    background-image: url(assets/svgs/searchlens.svg);
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+    background-size: 25px 25px;
+    border: none;
 }
 
-#searchlens{
-    height: 25px;
-    width: 25px;
+#search-bar::placeholder{
+    padding-left: 35px;
+    font-size: medium;
+    color: rgb(159, 159, 159);
+}
+
+.tiles{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.main-tile{
+    height: 195px;
+    width: 195px;
+    border: solid white;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-tile-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
