@@ -35,22 +35,29 @@ nav{
 .main-content{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-start;
     background-color: black;
     position: relative;
+    height: 710px;
+    margin-left: 7px;
+    gap: 7px;
 }
 
 main{
     /* border: solid skyblue; */
     border-width: 2px;
-    height: 700px;
+    /* height: 710px; */
     width: 77vw;
     justify-content: right;
     border-radius: 10px;
     background-color: #121212;
     position: relative;
     z-index: 0;
-    overflow: scroll
+    overflow-y: scroll;
+    overflow-x: auto;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
 }
 
 .fade-bg{
@@ -60,6 +67,7 @@ main{
     border-radius: 10px;
     position: relative;
     z-index: 3;
+    width: 100vw;
 }
 
 .songs{
@@ -74,15 +82,16 @@ aside{
     /* border: solid red; */
     border-radius: 10px;
     border-width: 2px;
-    height: 700px;
+    /* height: 700px; */
     width: 22vw;
     justify-content: left;
+    overflow: scroll;
 }
 
 
 
 footer{
-    border: solid yellow;
+    margin-top: 100px;
     border-width: 2px;
     display: flex;
     flex-direction: column;
@@ -114,7 +123,7 @@ hr {
     height: 1px;
     border: 0;
     border-top: 1px solid #575757;
-    /* margin: 1em 0; */
+    margin-top: 10px;
     padding: 0;
     width: 95%;
 }
@@ -125,7 +134,7 @@ hr {
     justify-content: center;
 }
 
-.signup-bar{
+#signup-bar{
     background-image: linear-gradient(to right, #AF2795, #509BF4);
     display: flex;
     flex-direction: row;
@@ -134,6 +143,63 @@ hr {
     height: 50px;
     margin-top: 7px;
     /* border: solid red; */
+    /* visibility: hidden; */
+}
+
+#music-player{
+    background-image: green;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: 50px;
+    margin-top: 7px;
+    color: white;
+    border: solid red;
+}
+
+#music-controller{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.controlButtons{
+    color: #979797;
+    /* border: solid white; */
+}
+
+.controlButtons:hover{
+    color: white;
+}
+
+.controlButtonSvgs{
+    height: 20px;
+    width: 20px;
+}
+
+#play-button{
+    height: 30px;
+    width: 30px;
+}
+
+#functionalities{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    border: solid white;
+}
+
+#current-song{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    border: solid white;
 }
 
 button{
@@ -144,9 +210,14 @@ button{
     padding-right: 20px;
 }
 
-.btn{
-    background-color: white;
-    color: black;
+button:hover{
+    cursor: pointer;
+    scale: 1.05;
+    background-color: #e7e7e7;
+}
+
+.btn:hover{
+    scale: 1.1;
 }
 
 #log-in{
@@ -161,6 +232,11 @@ button{
     border: none;
     display: grid;
     align-items: center;
+}
+
+#sign-up:hover{
+    scale: 1.05;
+    color: white;
 }
 
 .nav-signup{
@@ -185,11 +261,17 @@ button{
     width: 25px;
 }
 
+/* #lib-tile-set{
+    overflow-y: scroll;
+    overflow-x: scroll;
+} */
+
 #library{
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 10px;
+    position: relative;
 }
 
 #plus-svg{
@@ -206,21 +288,54 @@ button{
 
 .tile-set{
     margin-bottom: 20px;
+    /* border: solid white; */
 }
 
 .lib-tile{
-    height: 120px;
+    /* height: 120px; */
     background-color: #232323;
     position: relative;
     margin: 10px;
     margin-top: 25px;
     border-radius: 10px;
-    padding: 5px;
+    padding: 20px;
     padding-left: 20px;
     display: flex;
     flex-direction: column;
     /* flex-wrap: wrap; */
     justify-content: space-around;
+    gap: 20px;
+}
+
+.lib-tile-content{
+    font-size: small;
+    margin-top: 15px;
+}
+
+.side-links{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+#cookies{
+    color: white;
+    font-size: smaller;
+}
+
+.lib-link{
+    color: #979797;
+    font-size: x-small;
+    padding: 10px;
+}
+
+#lib-footer{
+    padding: 20px;
+    /* border: solid white; */
+    position: relative;
+    top: 120px;
+    z-index: 9;
 }
 
 #world-svg{
@@ -234,14 +349,18 @@ button{
     display: flex;
     flex-direction: row;
     gap: 3px;
-    padding: 5px;
+    padding: 7px;
     padding-left: 15px;
     padding-right: 15px;
     align-items: center;
-    border: solid #575757;
+    border: 0.5px solid #575757;
     position: absolute;
     bottom: 30px;
     left: 25px;
+}
+
+.langs button:hover{
+    border: 0.5px solid white;
 }
 
 .invert{
@@ -259,7 +378,7 @@ button{
     align-items: center;
     justify-content: center;
     /* gap: 10px; */
-    width: 33vw;
+    width: 550px;
     /* border: solid red; */
     /* margin: auto; */
     gap: 7px;
@@ -268,7 +387,7 @@ button{
 #home-container{
     background-color: #232323;
     border: none;
-    border-radius: 30px;
+    border-radius: 50%;
     height: 45px;
     width: 45px;
     display: flex;
@@ -305,22 +424,55 @@ button{
     margin-top: 10px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: left;
     align-items: center;
-    gap: 20px;
+    /* gap: 20px; */
+    /* border: solid red; */
 }
 
-.main-tile{
+.main-tile > *{
     height: 195px;
     width: 195px;
-    border: solid white;
+    /* border: solid white; */
     border-radius: 50%;
     display: flex;
     flex-direction: column;
+    object-fit: cover;
+    box-shadow: 0px 10px 20px 0.5px rgb(15, 15, 15);
+    /* width: fit-content; */
 }
 
 .main-tile-content{
     display: flex;
     flex-direction: column;
     gap: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    /* border: solid white; */
+}
+
+.main-tile-content:hover{
+    background-color: #1f1f1f;
+    cursor: pointer;
+}
+
+#links-table{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 30px;
+    width: 50vw;
+    justify-content: space-between;
+    
+}
+
+.link-list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: small;
+}
+
+a{
+    text-decoration: none;
 }

@@ -16,9 +16,9 @@
             <img id="logo-svg" src="assets/svgs/logo.svg" alt="spotify logo">
         </div>
         <div id="home-search">
-            <span id="home-container">
+            <button id="home-container">
                 <img id="home-svg" class="invert" src="assets/svgs/home-svgrepo-com.svg" alt="home-svg">
-            </span>
+            </button>
             <form action="get">
                 <input id="search-bar" class="text-normal" type="text" placeholder="What do you want to play?">
             </form>
@@ -40,22 +40,36 @@
                     <img id="plus-svg" src="assets/svgs/plus-svgrepo-com.svg" alt="plus svg">
                 </div>
             </div>
-            <div class="lib-tile">
-                <div class="text-bold">
-                    <p> Create your first playlist</p>
-                    <p class="text-normal" style="font-size: small; margin-top: 15px;">It's easy, we'll help you</p>
+            <div id="lib-tiles-set">
+                <div class="lib-tile">
+                    <div class="text-bold">
+                        <p>Create your first playlist</p>
+                        <p class="text-normal lib-tile-content">It's easy, we'll help you</p>
+                    </div>
+                    <button class="btn text-bold" style="width: fit-content;">Create Playlist</button>
                 </div>
-                <button class="btn text-bold" style="width: fit-content;">Create Playlist</button>
+                <div class="lib-tile">
+                    <div class="text-bold">
+                        <p>Lets find some podcasts to follow</p>
+                        <p class="text-normal lib-tile-content">We'll keep you updated on new episodes</p>
+                    </div>
+                    <button class="btn text-bold" style="width: fit-content;">Browse podcasts</button>
+                </div>
             </div>
-            <div class="lib-tile">
-                <div class="text-bold">
-                    <p> Create your first playlist</p>
-                    <p class="text-normal" style="font-size: small; margin-top: 15px;">It's easy, we'll help you</p>
+            <div id="lib-footer">
+                <div class="side-links">
+                    <span class="text-bold lib-link">Legal</span>
+                    <span class="text-bold lib-link">Safety & Privacy center </span>
+                    <span class="text-bold lib-link">Privacy Policy</span>
+                    <span class="text-bold lib-link">Cookies</span>
+                    <span class="text-bold lib-link">About Ads</span>
+                    <span class="text-bold lib-link">Accessibility</span>
                 </div>
-                <button class="btn text-bold" style="width: fit-content;">Create Playlist</button>
+                <div id="cookies" class="text-normal lib-link">Cookies</div>
             </div>
             <div class="langs">
-                <button><img id="world-svg" src="assets/svgs/worldwide-internet-svgrepo-com.svg" alt="world">English</button>
+                <button class="text-bold"><img id="world-svg" src="assets/svgs/worldwide-internet-svgrepo-com.svg"
+                        alt="world">English</button>
             </div>
         </aside>
 
@@ -69,38 +83,73 @@
                     <div class="tiles">
                         <div class="main-tile-content">
                             <div class="text-normal main-tile">
+                                <img src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca"
+                                    alt="pritam img">
                             </div>
                             <p class="text-bold">*artist name*</p>
                             <p>artist</p>
                         </div>
                         <div class="main-tile-content">
                             <div class="text-normal main-tile">
+                                <img src="https://i.scdn.co/image/ab676161000051745ba2d75eb08a2d672f9b69b7"
+                                    alt="arijit">
                             </div>
                             <p class="text-bold">*artist name*</p>
                             <p>artist</p>
                         </div>
                         <div class="main-tile-content">
                             <div class="text-normal main-tile">
-
+                                <img src="https://i.scdn.co/image/ab676161000051748094cf9aa2f6ed775614c073" alt="">
                             </div>
                             <p class="text-bold">*artist name*</p>
                             <p>artist</p>
                         </div>
                         <div class="main-tile-content">
                             <div class="text-normal main-tile">
+                                <img src="https://i.scdn.co/image/ab67616100005174b19af0ea736c6228d6eb539c"
+                                    alt="rahman">
                             </div>
                             <p class="text-bold">*artist name*</p>
                             <p>artist</p>
                         </div>
                         <div class="main-tile-content">
                             <div class="text-normal main-tile">
-
+                                <img src="https://i.scdn.co/image/ab6761610000517490b6c3d093f9b02aad628eaf" alt="">
                             </div>
                             <p class="text-bold">*artist name*</p>
                             <p>artist</p>
                         </div>
                         <div class="main-tile-content">
                             <div class="text-normal main-tile">
+                                <img src="https://i.scdn.co/image/ab67616100005174c40600e02356cc86f0debe84" alt="">
+                            </div>
+                            <p class="text-bold">*artist name*</p>
+                            <p>artist</p>
+                        </div>
+                        <div class="main-tile-content">
+                            <div class="text-normal main-tile">
+                                <img src="https://i.scdn.co/image/ab676161000051740f0be2054fe9594026a6b843" alt="">
+                            </div>
+                            <p class="text-bold">*artist name*</p>
+                            <p>artist</p>
+                        </div>
+                        <div class="main-tile-content">
+                            <div class="text-normal main-tile">
+                                <img src="https://i.scdn.co/image/ab67616100005174fb13d10be20fdcb5a670f551" alt="">
+                            </div>
+                            <p class="text-bold">*artist name*</p>
+                            <p>artist</p>
+                        </div>
+                        <div class="main-tile-content">
+                            <div class="text-normal main-tile">
+                                <img src="https://i.scdn.co/image/ab67616100005174bc7e4fffd515b47ff1ebbc1f" alt="">
+                            </div>
+                            <p class="text-bold">*artist name*</p>
+                            <p>artist</p>
+                        </div>
+                        <div class="main-tile-content">
+                            <div class="text-normal main-tile">
+                                <img src="https://i.scdn.co/image/ab67616100005174fc043bea91ac91c222d235c9" alt="">
                             </div>
                             <p class="text-bold">*artist name*</p>
                             <p>artist</p>
@@ -114,12 +163,63 @@
                     <div class="tiles">
                         <div class="main-tile-content">
                             <div class="text-normal main-tile">
+                                <img src="https://i.scdn.co/image/ab67616d00001e02aad3f4b601ae8763b3fc4e88" alt="">
                             </div>
                             <p class="text-bold">*artist name*</p>
                             <p>artist</p>
                         </div>
                         <div class="main-tile-content">
                             <div class="text-normal main-tile">
+                                <img src="https://i.scdn.co/image/ab67616d00001e026404721c1943d5069f0805f3" alt="">
+                            </div>
+                            <p class="text-bold">*artist name*</p>
+                            <p>artist</p>
+                        </div>
+                        <div class="main-tile-content">
+                            <div class="text-normal main-tile">
+                                <img src="https://i.scdn.co/image/ab67616d00001e02707ea5b8023ac77d31756ed4" alt="">
+                            </div>
+                            <p class="text-bold">*artist name*</p>
+                            <p>artist</p>
+                        </div>
+                        <div class="main-tile-content">
+                            <div class="text-normal main-tile">
+                                <img src="https://i.scdn.co/image/ab67616d00001e027f35adfbec3bb2bc8256802b" alt="">
+                            </div>
+                            <p class="text-bold">*artist name*</p>
+                            <p>artist</p>
+                        </div>
+                        <div class="main-tile-content">
+                            <div class="text-normal main-tile">
+                                <img src="https://i.scdn.co/image/ab67616d00001e02bb25239324c4e16ae01fda36" alt="">
+                            </div>
+                            <p class="text-bold">*artist name*</p>
+                            <p>artist</p>
+                        </div>
+                        <div class="main-tile-content">
+                            <div class="text-normal main-tile">
+                                <img src="https://i.scdn.co/image/ab67616d00001e0272a77d038887cdc425f5ee55" alt="">
+                            </div>
+                            <p class="text-bold">*artist name*</p>
+                            <p>artist</p>
+                        </div>
+                        <div class="main-tile-content">
+                            <div class="text-normal main-tile">
+                                <img src="https://i.scdn.co/image/ab67616d00001e0209c9bf421422262c368009d6" alt="">
+                            </div>
+                            <p class="text-bold">*artist name*</p>
+                            <p>artist</p>
+                        </div>
+                        <div class="main-tile-content">
+                            <div class="text-normal main-tile">
+                                <img src="https://i.scdn.co/image/ab67616d00001e025f3ede47954a93aa03efe5f9" alt="">
+                            </div>
+                            <p class="text-bold">*artist name*</p>
+                            <p>artist</p>
+                        </div>
+                        <div class="main-tile-content">
+                            <div class="text-normal main-tile">
+                                <img src="https://i.scdn.co/image/ab67616d00001e021aa5adad8593923dcdf1a7d0" alt="">
                             </div>
                             <p class="text-bold">*artist name*</p>
                             <p>artist</p>
@@ -127,25 +227,6 @@
                         <div class="main-tile-content">
                             <div class="text-normal main-tile">
 
-                            </div>
-                            <p class="text-bold">*artist name*</p>
-                            <p>artist</p>
-                        </div>
-                        <div class="main-tile-content">
-                            <div class="text-normal main-tile">
-                            </div>
-                            <p class="text-bold">*artist name*</p>
-                            <p>artist</p>
-                        </div>
-                        <div class="main-tile-content">
-                            <div class="text-normal main-tile">
-
-                            </div>
-                            <p class="text-bold">*artist name*</p>
-                            <p>artist</p>
-                        </div>
-                        <div class="main-tile-content">
-                            <div class="text-normal main-tile">
                             </div>
                             <p class="text-bold">*artist name*</p>
                             <p>artist</p>
@@ -159,38 +240,80 @@
                     <div class="tiles">
                         <div class="main-tile-content">
                             <div class="text-normal main-tile">
+                                <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/4YRxDV8wJFPHPTeXepOstw/en"
+                                    alt="">
                             </div>
                             <p class="text-bold">*artist name*</p>
                             <p>artist</p>
                         </div>
                         <div class="main-tile-content">
                             <div class="text-normal main-tile">
+                                <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/2FKWNmZWDBZR4dE5KX4plR/en"
+                                    alt="">
                             </div>
                             <p class="text-bold">*artist name*</p>
                             <p>artist</p>
                         </div>
                         <div class="main-tile-content">
                             <div class="text-normal main-tile">
-
+                                <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/0oOet2f43PA68X5RxKobEy/en"
+                                    alt="">
                             </div>
                             <p class="text-bold">*artist name*</p>
                             <p>artist</p>
                         </div>
                         <div class="main-tile-content">
                             <div class="text-normal main-tile">
+                                <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/4fEkbug6kZzzJ8eYX6Kbbp/en"
+                                    alt="">
                             </div>
                             <p class="text-bold">*artist name*</p>
                             <p>artist</p>
                         </div>
                         <div class="main-tile-content">
                             <div class="text-normal main-tile">
-
+                                <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/7uIbLdzzSEqnX0Pkrb56cR/en"
+                                    alt="">
                             </div>
                             <p class="text-bold">*artist name*</p>
                             <p>artist</p>
                         </div>
                         <div class="main-tile-content">
                             <div class="text-normal main-tile">
+                                <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/1mYsTxnqsietFxj1OgoGbG/en"
+                                    alt="">
+                            </div>
+                            <p class="text-bold">*artist name*</p>
+                            <p>artist</p>
+                        </div>
+                        <div class="main-tile-content">
+                            <div class="text-normal main-tile">
+                                <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/3gBKY0y3dFFVRqicLnVZYz/en"
+                                    alt="">
+                            </div>
+                            <p class="text-bold">*artist name*</p>
+                            <p>artist</p>
+                        </div>
+                        <div class="main-tile-content">
+                            <div class="text-normal main-tile">
+                                <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/4K6blSRoklNdpw4mzLxwfn/en"
+                                    alt="">
+                            </div>
+                            <p class="text-bold">*artist name*</p>
+                            <p>artist</p>
+                        </div>
+                        <div class="main-tile-content">
+                            <div class="text-normal main-tile">
+                                <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/70B80Lwx2sxti0M1Ng9e8K/en"
+                                    alt="">
+                            </div>
+                            <p class="text-bold">*artist name*</p>
+                            <p>artist</p>
+                        </div>
+                        <div class="main-tile-content">
+                            <div class="text-normal main-tile">
+                                <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/0GF4shudTAFv8ak9eWdd4Y/en"
+                                    alt="">
                             </div>
                             <p class="text-bold">*artist name*</p>
                             <p>artist</p>
@@ -204,12 +327,48 @@
                     <div class="tiles">
                         <div class="main-tile-content">
                             <div class="text-normal main-tile">
+                                <img src="https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_global_default.jpg"
+                                    alt="">
                             </div>
                             <p class="text-bold">*artist name*</p>
                             <p>artist</p>
                         </div>
                         <div class="main-tile-content">
                             <div class="text-normal main-tile">
+                                <img src="https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_in_default.jpg"
+                                    alt="">
+                            </div>
+                            <p class="text-bold">*artist name*</p>
+                            <p>artist</p>
+                        </div>
+                        <div class="main-tile-content">
+                            <div class="text-normal main-tile">
+                                <img src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_global_default.jpg"
+                                    alt="">
+                            </div>
+                            <p class="text-bold">*artist name*</p>
+                            <p>artist</p>
+                        </div>
+                        <div class="main-tile-content">
+                            <div class="text-normal main-tile">
+                                <img src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_in_default.jpg"
+                                    alt="">
+                            </div>
+                            <p class="text-bold">*artist name*</p>
+                            <p>artist</p>
+                        </div>
+                        <div class="main-tile-content">
+                            <div class="text-normal main-tile">
+                                <img src="https://charts-images.scdn.co/assets/locale_en/viral/daily/region_global_default.jpg"
+                                    alt="">
+                            </div>
+                            <p class="text-bold">*artist name*</p>
+                            <p>artist</p>
+                        </div>
+                        <div class="main-tile-content">
+                            <div class="text-normal main-tile">
+                                <img src="https://charts-images.scdn.co/assets/locale_en/viral/daily/region_in_default.jpg"
+                                    alt="">
                             </div>
                             <p class="text-bold">*artist name*</p>
                             <p>artist</p>
@@ -223,6 +382,7 @@
                         </div>
                         <div class="main-tile-content">
                             <div class="text-normal main-tile">
+
                             </div>
                             <p class="text-bold">*artist name*</p>
                             <p>artist</p>
@@ -236,6 +396,7 @@
                         </div>
                         <div class="main-tile-content">
                             <div class="text-normal main-tile">
+
                             </div>
                             <p class="text-bold">*artist name*</p>
                             <p>artist</p>
@@ -249,38 +410,70 @@
                     <div class="tiles">
                         <div class="main-tile-content">
                             <div class="text-normal main-tile">
+                                <img src="https://i.scdn.co/image/ab67706f00000002efb6d4aa8af6840df5951432" alt="">
                             </div>
                             <p class="text-bold">*artist name*</p>
                             <p>artist</p>
                         </div>
                         <div class="main-tile-content">
                             <div class="text-normal main-tile">
+                                <img src="https://i.scdn.co/image/ab67706f0000000213c0e9696b1b67551355fa64" alt="">
                             </div>
                             <p class="text-bold">*artist name*</p>
                             <p>artist</p>
                         </div>
                         <div class="main-tile-content">
                             <div class="text-normal main-tile">
-
+                                <img src="https://i.scdn.co/image/ab67706f000000024546eb67c6c1669f83865632" alt="">
                             </div>
                             <p class="text-bold">*artist name*</p>
                             <p>artist</p>
                         </div>
                         <div class="main-tile-content">
                             <div class="text-normal main-tile">
+                                <img src="https://i.scdn.co/image/ab67706f00000002639007e7b5d0e835871563d8" alt="">
                             </div>
                             <p class="text-bold">*artist name*</p>
                             <p>artist</p>
                         </div>
                         <div class="main-tile-content">
                             <div class="text-normal main-tile">
-
+                                <img src="https://i.scdn.co/image/ab67706f00000002dda381d6e4b5ebc246bada8a" alt="">
                             </div>
                             <p class="text-bold">*artist name*</p>
                             <p>artist</p>
                         </div>
                         <div class="main-tile-content">
                             <div class="text-normal main-tile">
+                                <img src="https://i.scdn.co/image/ab67706f00000002700d4fc1ba96b5fb0dbfee98" alt="">
+                            </div>
+                            <p class="text-bold">*artist name*</p>
+                            <p>artist</p>
+                        </div>
+                        <div class="main-tile-content">
+                            <div class="text-normal main-tile">
+                                <img src="https://i.scdn.co/image/ab67706f000000024df78d8e854c77bcbb81a634" alt="">
+                            </div>
+                            <p class="text-bold">*artist name*</p>
+                            <p>artist</p>
+                        </div>
+                        <div class="main-tile-content">
+                            <div class="text-normal main-tile">
+                                <img src="https://i.scdn.co/image/ab67706f00000002f8c089c81363798be936b9e7" alt="">
+                            </div>
+                            <p class="text-bold">*artist name*</p>
+                            <p>artist</p>
+                        </div>
+                        <div class="main-tile-content">
+                            <div class="text-normal main-tile">
+                                <img src="https://i.scdn.co/image/ab67706f0000000241d850fa743e1ebf012a686e" alt="">
+                            </div>
+                            <p class="text-bold">*artist name*</p>
+                            <p>artist</p>
+                        </div>
+                        <div class="main-tile-content">
+                            <div class="text-normal main-tile">
+                                <img src="https://i.scdn.co/image/ab67706f0000000257ae44157ef0524020ad4af4" alt="">
                             </div>
                             <p class="text-bold">*artist name*</p>
                             <p>artist</p>
@@ -288,24 +481,78 @@
                     </div>
                 </div>
                 <footer>
-                    <div class="link-list">useful links
-    
+                    <div id="links-table">
+                        <div class="link-list" id="company">
+                            <p class="text-bold">Company</p>
+                            <p class="text-normal">About</p>
+                            <p class="text-normal">Jobs</p>
+                            <p class="text-normal">For the record</p>
+                            <p class="text-normal"></p>
+                            <p class="text-normal"></p>
+                        </div>
+                        <div class="link-list" id="communities">
+                            <p class="text-bold">Communities</p>
+                            <p class="text-normal">For artists</p>
+                            <p class="text-normal">Developers</p>
+                            <p class="text-normal">Advertising</p>
+                            <p class="text-normal">Investors</p>
+                            <p class="text-normal">Vendors</p>
+                        </div>
+                        <div class="link-list" id="useful links">
+                            <p class="text-bold">Useful links</p>
+                            <p class="text-normal">Support</p>
+                            <p class="text-normal">Free Mobile app</p>
+                            <p class="text-normal"></p>
+                            <p class="text-normal"></p>
+                            <p class="text-normal"></p>
+                        </div>
+                        <div class="link-list" id="spotify-plans">
+                            <p class="text-bold">Spotify Plans</p>
+                            <p class="text-normal">Premium Individual</p>
+                            <p class="text-normal">Premium Duo</p>
+                            <p class="text-normal">Premium Family</p>
+                            <p class="text-normal">Premium Student</p>
+                            <p class="text-normal">Spotify Free</p>
+                        </div>
                     </div>
                     <hr />
-                    <div class="copyright" style="margin-top: 50px; margin-bottom: 100px; font-size: small;">© 2025 Spotify
+                    <div class="copyright" style="margin-top: 50px; margin-bottom: 100px; font-size: small;">© 2025
+                        Spotify
                         AB</div>
                 </footer>
             </div>
         </main>
     </div>
 
-    <div class="signup-bar">
+    <!-- <div id="signup-bar">
         <div id="signup-info">
             <div class="text-bold" style="font-size: small;">Preview of Spotify</div>
             <div class="text-normal" style="margin-top: 5px;">Sign up to get unlimited songs and podcasts with
                 occasional ads. No credit card needed.</div>
         </div>
         <button id="signup-free" class="btn text-bold">Sign up free</button>
+    </div> -->
+    <div id="music-player">
+        <div id="current-song">
+            <img src="" alt="" id="current-song-img">
+        </div>
+        <div id="music-controller">
+            <div class="controlButtons btn"><img src="assets/svgs/shuffle-stroke-rounded.svg" alt="" class="invert controlButtonSvgs"></div>
+            <div class="controlButtons btn"><img src="assets/svgs/previous-stroke-rounded.svg" alt="" class="invert controlButtonSvgs"></div>
+            <div class="controlButtons btn"><img id="play-button" src="assets/svgs/play-circle-02-stroke-rounded.svg" alt="" class="invert controlButtonSvgs"></div>
+            <div class="controlButtons btn"><img src="assets/svgs/next-stroke-rounded.svg" alt="" class="invert controlButtonSvgs"></div>
+            <div class="controlButtons btn"><img src="assets/svgs/repeat-stroke-rounded.svg" alt="" class="invert controlButtonSvgs"></div>
+        </div>
+        <div id="functionalities">
+            <div class="funcButton">goggy</div>
+            <div class="funcButton">goggy</div>
+            <div class="funcButton">goggy</div>
+            <div class="funcButton">goggy</div>
+            <div class="funcButton">goggy</div>
+            <div class="funcButton">goggy</div>
+            <div class="funcButton">goggy</div>
+            <div class="funcButton">goggy</div>
+        </div>
     </div>
 
 
